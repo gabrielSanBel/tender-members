@@ -1,0 +1,77 @@
+$primary:       #fdd477;//#ffd11a, #ffe680
+$secondary:     #22507D; //#66c2ff, #85a3e0
+
+$logo-white:    #f7faec;
+$alt-blue:      #65ACDF;
+//Darker Blue: #22507D, Lighter Blue: #65ACDF
+// .btn-outline-primary{
+//     background-color: $primary;
+//     color: black;
+// }
+// Need to figure out how to change text color.
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/variables";
+
+// @font-face {
+//     font-family: "Akaya";
+//     src: local(\fonts\AkayaTelivigala-Regular) format("truetype");
+// }
+
+.cust-navbar-links{ //class added to navbar navigation links to alter font
+    font-family: 'Chewy', cursive;
+    color: ivory;
+    font-weight: bold;
+}
+
+.cust-font{
+    // font-family: 'Akaya Telivigala', cursive;
+    font-family: 'Chewy', cursive;
+    
+    // font-family: 'Gloria Hallelujah', cursive;
+    // font-family: 'Patrick Hand', cursive;
+}
+
+// $nav-height: var(--#{$variable-prefix}scroll-height,75vh);
+
+// .cust-height{
+//     height: 100vh - $nav-height
+// }
+.cust-card{
+    background-color: $alt-blue;
+}
+// .cust-card-text{
+//     color: $logo-white;
+// }
+
+.cart-btn{
+    padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+    @include font-size($navbar-toggler-font-size);
+    line-height: 1;
+    background-color: transparent; // remove default button style
+    border: $border-width solid transparent; // remove default button style
+    @include border-radius($navbar-toggler-border-radius);
+    
+
+        &:hover {
+        text-decoration: none;
+        }
+
+        &:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: 0 0 0 $navbar-toggler-focus-width;
+        }
+}
+
+
+
+
+@include media-breakpoint-down(sm) {
+    .cust-hide {
+        display: none;
+    }
+}
+

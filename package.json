@@ -1,0 +1,24 @@
+{
+  "name": "tender-members-bs",
+  "version": "1.0.0",
+  "description": "Tender Members site built with bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch ./scss/main.scss -o ./public/css",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2",
+    "bootstrap-icons": "^1.4.0",
+    "express": "^4.17.1",
+    "node-sass": "^5.0.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
